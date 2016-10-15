@@ -13,6 +13,10 @@ namespace Computer_Ency
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            /*
+             * Running the application without URL segments defaults to 
+             * the Home controller and Index action. 
+             */ 
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",

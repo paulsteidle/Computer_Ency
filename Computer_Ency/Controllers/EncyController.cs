@@ -14,9 +14,12 @@ namespace Computer_Ency.Controllers
             return View();
         }
 
-        public string Welcome()
+        public ActionResult Welcome(string name, int numTimes = 1)
         {
-            return "This is the welcome aciton method";
+            ViewBag.Message = "Hello " + name;
+            ViewBag.NumTimes = numTimes;
+
+            return View();
         }
     }
 }
