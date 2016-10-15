@@ -9,9 +9,9 @@ namespace Computer_Ency.Controllers
     public class EncyController : Controller
     {
         // GET: Ency
-        public string Index()
+        public ActionResult Index()
         {
-            return "This is my <b>default</b> action....bitch!";
+            return View();
         }
 
         public string Welcome()
